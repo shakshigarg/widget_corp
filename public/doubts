@@ -1,0 +1,11 @@
+$res=mysqli_query($conn,$query);
+          $res=mysqli_fetch_row($res);
+            for($count=1;$count<=$res+1;$count++)
+            {
+              echo "<option value='1'>{$count}</option>";
+            }
+
+
+
+            ///
+            mysqli_num_rows($res);
